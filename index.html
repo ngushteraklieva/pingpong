@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <title>Ping Pong Game</title>
+    <style>
+        canvas{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);               
+    }
+    div {
+            text-align:center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: #304670;
+            
+        }
+
+    body {
+        background-image: url('rainbow.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+
+    }
+    </style>
+</head>
+<body>
+    <script src="./cloud.js"></script>
+    <script src="./cloudsLeft.js"></script>
+    <script src="./background.js"></script>
+    <script src="./ball.js"></script>
+    <script src="./paddle.js"></script>
+    <script src="./game.js"></script>
+    <script src="./main.js"></script>
+    <div>Score:<span class="score">0</span></div>
+</body>
+</html>
