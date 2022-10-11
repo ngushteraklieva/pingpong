@@ -3,10 +3,10 @@ class CloudLeft {
 	constructor(image) {
 
         this.image = image
-		this.x = Math.random() * ((-100) - 50) + (-50);
+		this.x = Math.random() * ((-50) - 100) + (-100);
 		this.y = 50;
-		this.width = Math.random() * (150 - 120) + 120;;
-		this.height = Math.random() * (60 - 50) + 50;;
+		this.width = Math.random() * (150 - 120) + 120;
+		this.height = Math.random() * (60 - 50) + 50;
         
 	}
 	collision(ballInfo) {
@@ -22,7 +22,6 @@ class CloudLeft {
 		if (dist(cloudX, cloudY, ballX, ballY) > 50) {
 			return false
 		} else {
-			// increment the score
 			return true
 		}
 	}

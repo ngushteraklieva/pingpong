@@ -38,6 +38,8 @@ class Game {
 		this.cloudsLeft.forEach(function(cloud){
 			cloud.draw()
 		})
+
+		
 		this.clouds = this.clouds.filter(cloud => {
 			if (cloud.collision(this.ball)) {
 				this.scoreBigClouds+=10
